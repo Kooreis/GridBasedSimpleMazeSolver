@@ -1,16 +1,2 @@
-import java.util.LinkedList;
-
-public class MazeSolver {
-
-    static int[][] maze = {
-            {1, 1, 1, 1, 1, 0, 0, 1, 1, 1},
-            {1, 0, 0, 1, 1, 1, 0, 1, 0, 1},
-            {1, 1, 1, 0, 0, 1, 1, 1, 0, 1},
-            {0, 0, 1, 1, 1, 0, 0, 1, 1, 1},
-            {1, 1, 1, 0, 0, 1, 1, 0, 0, 1},
-            {1, 0, 1, 1, 1, 1, 0, 1, 0, 0},
-            {1, 0, 0, 0, 0, 1, 0, 1, 1, 1},
-            {1, 1, 1, 1, 1, 1, 1, 1, 0, 0},
-            {1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-            {1, 1, 1, 1, 1, 1, 1, 1, 1, 1}
-    };
+static LinkedList<Integer> path = new LinkedList<Integer>();
+    static boolean[][] wasHere = new boolean[10][10];

@@ -1,7 +1,5 @@
 ```python
-from queue import Queue
-
-def is_valid(maze, moves):
+def find_end(maze, moves):
     i = 0
     j = 0
     for move in moves:
@@ -13,9 +11,8 @@ def is_valid(maze, moves):
             j -= 1
         elif move == 'D':
             j += 1
-        if not(0 <= i < len(maze[0]) and 0 <= j < len(maze)):
-            return False
-        elif (maze[j][i] == 0):
-            return False
-    return True
+    if maze[j][i] == 2:
+        print("Found: " + moves)
+        return True
+    return False
 ```
